@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+      let produto = {
+        descricao: 'Notebook',
+        preco: 1800,
+        detalhes: {
+          fabricante: 'abc',
+          modelo: undefined
+        }
+      }
+
+      //let { descricao, preco } = produto // para desestruturar objetos => { }
+      //console.log(descricao, preco)
+
+      //let { descricao: d, preco: p, desconto } = produto
+
+      //let { descricao: d, preco: p = 1000, desconto = 5 } = produto
+      //console.log(d, p, desconto)
+
+      let { detalhes: { fabricante: f, modelo = 'não informado'} } = produto
+      console.log(f, modelo)
+
+    </script>
+    
+  </head>
+  <body>
+    
+  </body>
+</html>

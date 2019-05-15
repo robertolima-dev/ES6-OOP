@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Babel</title>
+
+		<meta charset="utf-8">
+
+		
+		<!-- Babel compilador para ES6 -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			const getMessage = () => "Hello World";
+			document.getElementById('output').innerHTML = getMessage();
+		</script>
+
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>

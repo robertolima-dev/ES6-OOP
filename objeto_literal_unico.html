@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      
+      let assinatura = {
+        idCliente: 1000,
+        descricao: 'Acesso a Internet',
+        status() {
+          console.log('Ativo')
+        }
+      }
+
+      console.log(assinatura.descricao)
+
+      let y = assinatura
+
+      console.log(y.descricao)
+
+      // -----
+
+      y.descricao = 'Internet + Tv + Telefone'
+
+      console.log(assinatura.descricao)
+      console.log(y.descricao)
+
+    </script>
+    
+  </head>
+  <body>
+    <div id="output"></div>
+  </body>
+</html>

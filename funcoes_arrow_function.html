@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Funcoes Arrow Function</title>
+
+		<meta charset="utf-8">
+
+		
+		<!-- Babel compilador para ES6 -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+
+			
+		// funcao comum
+		let quadrado = function (x = 5) {
+			return x * x
+		}
+
+		document.write( quadrado(3) )
+
+		document.write('<br />')
+
+
+		// ARROW FUNCTION
+		let arrowExemplo = x => x * x //LEMBRANDO QUE ESTE ESQUEMA SRVA APENAS PARA UM PARAMETRO
+
+		document.write( arrowExemplo(8) )
+
+		document.write('<br />')
+
+
+		// ARROW FUNCTION
+		
+
+		let calcular = (v, Y, z, w) => {
+
+			var v = 5
+			var y = 3
+			var z = 4
+			var w = 2
+
+
+			return v * y + (z / w)
+
+		}
+
+		document.write( calcular() )
+
+		document.write('<br />')
+
+
+		/*var numero = prompt('Escolha um número')
+
+		let parOuImpar = function(numero) {
+			if(numero % 2 === 0) {
+				return 'par'
+			} else {
+				return 'impar'
+			}
+		}
+
+		document.write(parOuImpar(numero)) */
+
+		// modo de escrita menos verboso
+		document.write('<br />')
+
+		let parOuImpar = numero => numero % 2 === 0 ? 'par' : 'impar'
+
+		document.write(parOuImpar(6))
+
+
+		</script>
+
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>

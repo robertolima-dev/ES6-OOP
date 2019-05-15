@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Var e Let</title>
+
+		<meta charset="utf-8">
+
+		
+		<!-- Babel compilador para ES6 -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			
+		// 3 escopos - Global - Função - Bloco
+
+		
+		/* var serie = 'Friends' // global
+
+		function x() { // funcao
+
+			var serie = 'Game of Thrones'
+
+			console.log('função: ' + serie)
+
+			if(true) { // bloco
+
+				console.log('bloco dentro da função: ' + serie)
+
+			}
+
+		}
+
+		x()
+
+		if(true) {
+
+			console.log('global: ' + serie)
+
+		}*/
+
+
+
+		function x() { // funcao
+
+			console.log('dentro da função: ' + serie)
+
+			if(true) { // bloco
+
+
+			}
+
+		}
+
+		
+
+		if(true) {
+
+			var serie = 'The walking dead'
+			x() // chamar a função após a variavel declarada
+
+			console.log(serie)
+		}
+
+
+
+		</script>
+
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Template String</title>
+
+		<meta charset="utf-8">
+
+		
+		<!-- Babel compilador para ES6 -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			
+		var nome = 'Jorge'
+		
+		// console.log('Oi ' + nome + ', tudo bem?')
+
+		console.log(`Oi ${nome}, tudo bem?`)
+
+		console.log(`Oi 
+${nome}, 
+tudo bem?`) // quebra de linhas sao permitidas
+
+
+		console.log(`7 + 7 = ${7+7}`)	
+		
+
+		function calcular(x, y)	{
+			return x * y 
+		}
+
+		console.log(`A multiplicação de 8 x 8 é = a ${calcular(8,8)}`)
+
+		</script>
+
+	</head>
+
+	<body>
+		<div id="output"></div>
+	</body>
+</html>
